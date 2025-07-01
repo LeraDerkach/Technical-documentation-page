@@ -1,3 +1,24 @@
+/* base */
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2 p {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
 body {
     color: #191919;
     background-color: azure;
@@ -5,15 +26,9 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.6;
-    
 }
 
-header {
-    color: black;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1.4;
-}
+/* Main */
 
 h1 {
     color: black;
@@ -22,9 +37,21 @@ h1 {
     line-height: 1.4;
 }
 
-#navbar {
+h2 {
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.widht {
+    display: grid;
+    grid-template-columns: 20% 80%;
     height: 100vh;
-    width: 200px;
+}
+
+.navbar {
+    height: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -32,22 +59,39 @@ h1 {
     flex-direction: column;
     padding: 20px;
     border: 2px solid #191919;
-    
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-main {
-    margin-left: 200px;
-    padding: 0 60px;
-    
-}
-
-@media (max-widht: 768px) {
-    nav {
+.content {
     display: none;
-  }
 }
+
+.main-doc {
+    padding: 20px;
+    margin-left: 60px;
+}
+
+@media (max-width: 1200px) {
+    .widht {
+    display: block;
+    height: 0;
+    }
+
+.navbar {
+    display: none;
+}
+
+.content {
+    display: block;
+    width: 80px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: aquamarine;
+    border-radius: 8px;
+}
+
+.main-doc {
+    margin-left: 0;
+    text-align: center;
+}
+}
+
