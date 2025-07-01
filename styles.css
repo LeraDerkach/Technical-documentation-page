@@ -71,10 +71,10 @@ h2 {
 }
 
 @media (max-width: 1200px) {
-    .widht {
-    display: block;
-    height: 0;
-    }
+.widht {
+display: block;
+height: 0;
+}
 
 .navbar {
     display: none;
